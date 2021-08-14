@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=KoHo&display=swap" rel="stylesheet">
+        <style>
+            * { box-sizing: border-box;}
+            body { margin: 0;}
+            #banner {
+                position: relative;
+                width: 300px;
+                height: 600px;
+                border: 1px solid #666;
+                overflow: hidden;
+            }
+            #banner>div { position: absolute }
+			
+			#bg-sari{
+				height:0;
+				width: 100%;
+				background:yellow;
+				animation-name: bg-sari;
+				animation-duration: 2s;
+				animation-fill-mode: forwards;
+			}
+			@keyframes bg-sari {
+				from{height:0}
+				to{height:50%}
+			}
+			#man{
+				right:-200px;
+				bottom:0;
+				animation-name: man;
+				animation-duration: 2s;
+				animation-fill-mode: forwards;
+			}
+			@keyframes man {
+				from{right:-200px}
+				to{right:0px}
+			}
+			#yazi{
+				opacity:0;
+				top:25%;
+				left:50%;
+				transform:translate(-50%,-50%);
+				font-size:2.5em;
+				font-family: 'KoHo', sans-serif;
+				text-align:center;
+				animation-name: yazi;
+				animation-duration: 1s;
+				animation-delay:2s;
+				animation-fill-mode: forwards;
+			}
+			@keyframes yazi {
+				from{opacity:0}
+				to{opacity:1}
+			}
+			#ag{
+				width:0;
+				height:600px;
+				right:0;
+				background:#fff;
+				animation-name: ag;
+				animation-duration: 1s;
+				animation-delay:4s;
+				animation-fill-mode: forwards;
+			}
+			@keyframes ag {
+				from{width:0}
+				to{width:300px}
+			}
+			#logo{
+				right:85px;
+				opacity:0;
+				width:40px;
+				height:40px;
+				animation-name: logo;
+				animation-duration: 1s;
+				animation-delay:5s;
+				animation-fill-mode: forwards;
+			}
+			@keyframes logo {
+				from{opacity:0}
+				to{opacity:1}
+			}
+			#yazi1{
+				opacity:0;
+				font-size:1.5em;
+				font-family: 'KoHo', sans-serif;
+				animation-name: yazi1;
+				animation-duration: 4s;
+				animation-delay:5s;
+				animation-fill-mode: backwards;
+			}
+			@keyframes yazi1 {
+				from {opacity:0}
+                to {opacity:1 }
+			}
+			#yazi2{
+				opacity:0;
+				font-size:1.5em;
+				font-family: 'KoHo', sans-serif;
+				animation-name: yazi2;
+				animation-duration: 1s;
+				animation-delay:9s;
+				animation-fill-mode: forwards;
+			}
+			@keyframes yazi2 {
+                from {opacity:0}
+                to {opacity:1 }
+			}
+			
+			#bmw1{
+				bottom:-100px;
+				right:-500px;
+				animation-name: bmw1;
+				animation-duration: 1s;
+				animation-delay:6s;
+				animation-fill-mode: forwards;
+			}
+			@keyframes bmw1 {
+				from{right:-500px}
+				to{right:-150px}
+			}
+			#bmw2{
+				bottom:0;
+				right:-500px;
+				animation-name: bmw2;
+				animation-duration: 1s;
+				animation-delay:7s;
+				animation-fill-mode: forwards;
+			}
+			@keyframes bmw2 {
+				from{right:-500px}
+				to{right:-250px}
+			}
+			#bmw3{
+				bottom:100px;
+				right:-700px;
+				animation-name: bmw3;
+				animation-duration: 1s;
+				animation-delay:8s;
+				animation-fill-mode: forwards;
+			}
+			@keyframes bmw3 {
+				from{right:-700px}
+				to{right:-300px}
+			}
+			#button {
+                width: 130px;
+                bottom: -80px;
+				left:3px;
+                animation: button 1s ease 9s forwards;
+            }
+            #button a {
+                display: inline-block;
+                font: .7em  'KoHo', sans-serif;;
+                text-decoration: none;
+                color: #fff;
+                padding: 8px 30px;
+                border-radius: 5px;
+                border: 1px solid #blue;
+                background: black;
+            }
+            @keyframes button {
+                from{bottom:-80px}
+				to{bottom:30px}
+            }
+			
+			</style>
+	</head>
+	<body>
+	
+	 <div id="banner">
+			<div id="bg-sari"></div>
+            <div id="man"><img src="image01.jpg"/></div>
+            <div id="yazi">GROWING</br> FAMILY?</div>
+			<div id="ag"></div>
+            <div id="logo"><img src="logo.jpg"/></div>
+            <div id="yazi1">ROOM TO KEEP</br>GROWING.</div>
+			<div id="yazi2">Find a bmw that</br>is right for you.</div>
+            <div id="bmw1"><img src="car01.png"/></div>
+			<div id="bmw2"><img src="car02.png"/></div>
+			<div id="bmw3"><img src="car03.png"/></div>
+            <div id="button"><a href="">LEARN MORE</a></div>
+        </div>
+	</body>
+</html>
